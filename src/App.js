@@ -4,11 +4,11 @@ import jsonServerProvider from 'ra-data-json-server';
 
 
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
-
+// działa 
 function App() {
   return (
     <div className="App">
-      <Admin dataProvider={dataProvider} />
+      <Admin dataProvider={dataProvider} /> 
     </div>
   );
 }
