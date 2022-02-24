@@ -1,10 +1,8 @@
 import * as React from "react";
 import { Admin } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
-
-
+//Making Contact With The API Using a Data Provider
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
-// działa 
 function App() {
   return (
     <div className="App">
