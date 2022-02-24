@@ -1,14 +1,15 @@
 import * as React from "react";
-import { Admin } from 'react-admin';
+import { Admin, Resource } from 'react-admin';
 import jsonServerProvider from 'ra-data-json-server';
-//Making Contact With The API Using a Data Provider
+import { UserList } from "./components/users/UserList";
+
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 function App() {
-  return (
-    <div className="App">
-      <Admin dataProvider={dataProvider} /> 
-    </div>
-  );
+    return (
+        <Admin dataProvider={dataProvider}>
+            <Resource name="users" list={UserList} />
+        </Admin>
+    );
 }
 
 export default App;
