@@ -7,12 +7,15 @@ import { PostEdit } from "./components/posts/PostEdit";
 import { PostCreate } from "./components/posts/PostCreate";
 import { UserEdit } from "./components/users/UserEdit";
 
+import PostIcon from '@mui/icons-material/Book';
+import UserIcon from '@mui/icons-material/Group';
+
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 function App() {
     return (
         <Admin dataProvider={dataProvider}>
-            <Resource name="posts" list={PostList} edit={PostEdit} create={PostCreate} />
-            <Resource name="users" list={UserList} edit={UserEdit} />   
+            <Resource name="posts" icon={PostIcon} list={PostList} edit={PostEdit} create={PostCreate} />
+            <Resource name="users" icon={UserIcon} list={UserList} edit={UserEdit} />   
         </Admin>
     );
 }
