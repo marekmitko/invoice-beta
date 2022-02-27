@@ -10,3 +10,14 @@
     Users can display the edit page just by clicking on the Edit button. 
     The form rendered is already functional; 
     it issues PUT requests to the REST API upon submission.
+
+
+
+
+### Question 
+    Sprawdzić po co dokładnie ja to robie 
+
+        export const PostCreate = props => (
+        +    <Create {...props}>
+        +        <SimpleForm>
+        ...

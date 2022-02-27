@@ -1,18 +1,14 @@
 import * as React from "react";
 import {
-    Edit,
+    Create,
     SimpleForm,
     ReferenceInput,
     SelectInput,
     TextInput,
 } from 'react-admin';
-import { PostTitle } from "./PostTitle";
 
-// Odpowiednikiem <List>     jest    <Edit>
-// odpowiednikiem   <Datagird> jest    <SimpleForm>
-
-export const PostEdit = (props) => (
-    <Edit title={<PostTitle />} {...props}>
+export const PostCreate = (props) => (
+    <Create {...props}>
         <SimpleForm>
             <TextInput disabled source="id" />
             <ReferenceInput source="userId" reference="users">
@@ -22,5 +18,5 @@ export const PostEdit = (props) => (
             {/* <TextInput source="body" /> */}
             <TextInput multiline source="body" />
         </SimpleForm>
-    </Edit>
+    </Create>
 );

@@ -25,3 +25,22 @@ b. children odpowiada za render
         Wskazówka: Spójrz ponownie na kartę sieciową przeglądarki: 
             react-admin deduplikuje żądania dla użytkowników i agreguje je, aby wysłać tylko jedno żądanie HTTP do punktu końcowego /users dla całej sieci Danych. 
             To jedna z wielu optymalizacji, które sprawiają, że interfejs użytkownika jest szybki i responsywny.
+
+
+### Edit 
+    Jeśli zrozumiałeś komponent <List>, komponent <Edit> nie będzie zaskoczeniem. 
+    Jest odpowiedzialny za pobieranie rekordu i wyświetlanie tytułu strony. 
+
+    Przekazuje rekord do składnika <SimpleForm>,
+    który jest odpowiedzialny za układ formularza, 
+    wartości domyślne i sprawdzanie poprawności. 
+
+### <SimpleForm>
+     który jest odpowiedzialny za układ formularza, 
+     wartości domyślne i sprawdzanie poprawności. 
+
+     - używa swoich elementów podrzędnych 
+        do określenia danych wejściowych formularza do wyświetlenia.
+
+    Oczekuje składników wejściowych jako dzieci. <TextInput>,
+     <ReferenceInput> i <SelectInput> są takimi wejściami.
