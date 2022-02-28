@@ -15,7 +15,6 @@ export const PostCreate = (props) => (
                 <SelectInput optionText="name" />
             </ReferenceInput>
             <TextInput source="title" />
-            {/* <TextInput source="body" /> */}
             <TextInput multiline source="body" />
         </SimpleForm>
     </Create>

@@ -36,8 +36,10 @@ b. children odpowiada za render
     wartości domyślne i sprawdzanie poprawności. 
 
 ### <SimpleForm>
-     który jest odpowiedzialny za układ formularza, 
-     wartości domyślne i sprawdzanie poprawności. 
+     który jest odpowiedzialny
+     - za układ formularza, 
+     - wartości domyślne 
+     - sprawdzanie poprawności. 
 
      - używa swoich elementów podrzędnych 
         do określenia danych wejściowych formularza do wyświetlenia.

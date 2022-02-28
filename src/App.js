@@ -6,6 +6,7 @@ import { PostList } from "./components/posts/PostList";
 import { PostEdit } from "./components/posts/PostEdit";
 import {PostCreate} from "./components/posts/PostCreate";
 import { UserEdit } from "./components/users/UserEdit";
+import {Dashboard} from "./components/dashboard/Dashboard"
 
 import PostIcon from '@mui/icons-material/Book';
 import UserIcon from '@mui/icons-material/Group';
@@ -13,7 +14,7 @@ import UserIcon from '@mui/icons-material/Group';
 const dataProvider = jsonServerProvider('https://jsonplaceholder.typicode.com');
 function App() {
     return (
-        <Admin dataProvider={dataProvider}>
+        <Admin dataProvider={dataProvider} dashboard={Dashboard}>
             <Resource name="posts" icon={PostIcon} list={PostList} edit={PostEdit} create={PostCreate} />   
             <Resource name="users" icon={UserIcon} list={UserList} edit={UserEdit}  />   
         </Admin>
