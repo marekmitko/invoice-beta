@@ -5,7 +5,7 @@ import MyUrlField  from "../custom/reusable/fields/MyUrlField"
 
 export const UserList = () => (
     <List>
-        <Datagrid rowClick="edit">
+        <Datagrid>
             <TextField source="id" />
             <TextField source="name" />
             <TextField source="username" />
